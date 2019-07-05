@@ -11,7 +11,7 @@ puts "Where would you like to go?"
 input = gets.strip
 input_to_index(input)
 
-move(boad, index, token)
+move(board, index, token)
 
 
 def move(board, index, token)
