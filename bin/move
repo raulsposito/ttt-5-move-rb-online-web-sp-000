@@ -13,22 +13,5 @@ possition_on_the_board = input_to_index(input)
 
 move(board, possition_on_the_board)
 
-
-
-def display_board(board)
-  puts " #{board[0]} | #{board[1]} | #{board[2]} "
-  puts "-----------"
-  puts " #{board[3]} | #{board[4]} | #{board[5]} "
-  puts "-----------"
-  puts " #{board[6]} | #{board[7]} | #{board[8]} "
-end
-
-def capture_puts(input)
-  input = $stdout
-  $stdout = StringIO.new
-  yield
-  $stdout.string
-ensure
-  $stdout = input
-end 
+display_board(board)
 
